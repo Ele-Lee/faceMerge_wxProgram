@@ -1,0 +1,71 @@
+.upload {
+  width: 100%;
+  height: 100vh;
+  background-color: #ef7d5b;
+  text-align: center;
+  .logo {
+    position: fixed;
+    top: 0.5px;
+    left: 0.48px;
+    width: 1.09px;
+    height: 1.09px;
+    z-index: 30;
+    // @include cover-bg('@imgs/logo1.png');
+  }
+
+  .box--upload {
+    font-size: 0;
+    /* @media screen and (min-aspect-ratio: 375/667) {
+        margin: 0.2px auto 0;
+    } */
+    margin: 5% auto 0;
+    /* width: 5.38px; */
+    /* height: 6.3px; */
+    width: 6.2px;
+    height: 7.2px;
+    position: relative;
+  }
+  .box--model {
+    margin-top: 0.16px;
+    font-size: 0;
+    text-align: center;
+    .model {
+      position: relative;
+      display: inline-block;
+      box-sizing: border-box;
+      width: 1.92px;
+      height: 2.4px;
+      border: 0.06px solid transparent;
+      border-radius: 0.07px;
+      font-size: 0;
+      z-index: 10;
+      overflow: hidden;
+      .inner {
+        width: 1.92px;
+        height: 2.65px;
+      }
+      &:first-child {
+          float: left;
+          margin-left: 1.2px;
+      }
+      &:last-child {
+          float: right;
+          margin-right: 1.2px;
+      }
+      &.cover {
+          border: .06px solid #a00107;
+          box-shadow: 0 0 0.2px 0.03px rgba(183, 9, 9, 0.75);
+          /* opacity: 0.65; */
+          /* z-index: 1; */
+      }
+    }
+  }
+
+  .building {
+    position:fixed;
+    right:0;
+    bottom:0;
+    width: 5.1px;
+    height: 4.1px;
+  }
+}
